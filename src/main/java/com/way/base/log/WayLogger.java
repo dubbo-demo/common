@@ -6,21 +6,18 @@ import org.slf4j.LoggerFactory;
 /**
  * INFO: info
  * User: xinpei.xu
- * Date: 2017/7/1 - 11:30 
+ * Date: 2017/7/1 - 11:30
  * Version: 1.0
  * History: <p>如果有修改过程，请记录</P>
  */
 public class WayLogger {
 
+    public static final String LOG_SEPARATOR = "|";
     private final static String AccessLoggerName = "way.log.access";
     private final static String ExceptionLoggerName = "way.log.exception";
     private final static String SystemLoggerName = "way.log.system";
     private final static String DebugLoggerName = "way.log.debug";
     private final static String OutInterfaceLoggerName = "way.log.outInterface";
-
-
-    public static final String LOG_SEPARATOR = "|";
-
     /**
      * sfl4j的logger
      */
@@ -104,14 +101,14 @@ public class WayLogger {
             accessLogger.info(format, arguments);
         }
     }
-    
+
     /**
      * @param message 输出消息
      */
     public static void outInterface(String message) {
         LogPropsReload.refreshLogProperties();
         if (LogPropsReload.isInterfaceEnabled) {
-        	outLogger.info(message);
+            outLogger.info(message);
         }
     }
 
@@ -122,7 +119,7 @@ public class WayLogger {
     public static void outInterface(String format, Object... arguments) {
         LogPropsReload.refreshLogProperties();
         if (LogPropsReload.isInterfaceEnabled) {
-        	outLogger.info(format, arguments);
+            outLogger.info(format, arguments);
         }
     }
 

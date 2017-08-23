@@ -50,17 +50,12 @@ public class LogPropsReload {
     private static final String LOG4J_OUTINTERFACELOGGER_ISOPEN = "log4j.OutInterfaceLogger.isopen";
     private static final String LOG4J_EXCEPTIONLOGGER_ISOPEN = "log4j.ExceptionLogger.isopen";
     private static final String LOG4J_SYSTEMLOGGER_ISOPEN = "log4j.SystemLogger.isopen";
-
-    //定义类变量初始化属性
-    // 刷新间隔
-    private static long interval = -1l;
     // 出入参隐藏
     protected static boolean hideParams = true;
     /**
      * 上次修改时间
      */
     protected static Date lastUpdateDate = new Date();
-
     // 调试日志开关
     protected static boolean isDebugEnabled = false;
     // 访问日志开关
@@ -71,7 +66,9 @@ public class LogPropsReload {
     protected static boolean isExceptionEnabled = false;
     // 系统日志开关
     protected static boolean isSystemEnabled = false;
-
+    //定义类变量初始化属性
+    // 刷新间隔
+    private static long interval = -1l;
     private static long default_interval = 60000L;
 
     /**
