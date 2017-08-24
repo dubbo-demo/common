@@ -11,8 +11,8 @@ import java.util.Properties;
 
 /**
  * INFO: info
- * User: zhaokai
- * Date: 2016/8/23 - 13:51
+ * User: xinpei.xu
+ * Date: 2017/7/1 - 13:51
  * Version: 1.0
  * History: <p>如果有修改过程，请记录</P>
  */
@@ -20,29 +20,6 @@ import java.util.Properties;
 public class LogPropsReload {
 
     private static final Logger LOG = LoggerFactory.getLogger(LogPropsReload.class);
-    /*@PostConstruct
-    private void tt() {
-        new Thread() {
-            @Override
-            public void run() {
-                while (true) {
-                    try {
-                        refreshLogProperties();
-                        Thread.sleep(5000);
-                    } catch (Exception e) {
-                        // 不允许停止监控
-                        try {
-                            Thread.sleep(5000);
-                        } catch (InterruptedException e1) {
-                            // just ignore
-                        }
-                        LOG.error("LogThread error:"
-                                + e.getMessage());
-                    }
-                }
-            }
-        }.start();
-    }*/
     private static final String LOG4J_HIDEPARAMS = "log4j.hideParams";
     private static final String LOG4J_RELOAD_INTERVAL = "log4j.reload.interval";
     private static final String LOG4J_DEBUGLOGGER_ISOPEN = "log4j.DebugLogger.isopen";
