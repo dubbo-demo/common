@@ -3,10 +3,10 @@ package com.way.common.util;
 import java.util.Locale;
 
 /**
- * 〈一句话功能简述〉<br>
+ * 对象、集合转化工具类<br>
  * 〈功能详细描述〉
  *
- * @author LG
+ * @author xinpei.xu
  * @see [相关类/方法]（可选）
  * @since [产品/模块版本] （可选）
  */

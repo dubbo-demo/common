@@ -3,12 +3,12 @@ package com.way.common.util;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * 用户敏感信息隐位工具类
+ *  用户敏感信息隐位工具类
+ * 〈功能详细描述〉
  *
- * @author hf
- * @ClassName: SensitiveInfoUtils
- * @Description: TODO
- * @date 2016年9月14日 上午11:32:49
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
 public class SensitiveInfoUtils {
 

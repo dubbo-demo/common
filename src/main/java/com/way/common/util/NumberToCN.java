@@ -3,11 +3,12 @@ package com.way.common.util;
 import java.math.BigDecimal;
 
 /**
- * @ClassName: NumberToCN
- * @Description: TODO
- * @author hf
- * @date 2016年11月3日 下午5:08:22
- * 
+ * 〈一句话功能简述〉<br>
+ * 〈功能详细描述〉
+ *
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
 public class NumberToCN {
 

@@ -2,13 +2,13 @@ package com.way.common.util;
 
 import java.util.Random;
 
-/**   
- * @Title StringRandom.java
- * @Package com.myph.mobile.common.util
- * @Description 
- * @author chao.xu
- * @date 2016年1月29日 上午10:43:00
- * @version V1.0   
+/**
+ * 〈一句话功能简述〉<br>
+ * 〈功能详细描述〉
+ *
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
 public class StringRandom {  
   

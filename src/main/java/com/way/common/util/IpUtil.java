@@ -5,13 +5,12 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * 获取用户IP地址
- * 
- * @ClassName: IpUtil
- * @Description: TODO
- * @author hf
- * @date 2016年9月22日 上午10:34:52
- * 
+ * 〈一句话功能简述〉<br>
+ * 〈功能详细描述〉
+ *
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
 public class IpUtil {
 

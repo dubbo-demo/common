@@ -17,9 +17,12 @@ import java.util.*;
 import java.util.Map.Entry;
 
 /**
- * 密码工具类,提供侵犯隐私的直接读取filed的能力.
- * 
- * @since version1.0
+ * 〈一句话功能简述〉<br>
+ * 〈功能详细描述〉
+ *
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
 public class BeanUtils {
 

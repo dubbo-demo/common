@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * INFO: HttpServletResponse帮助类
- * User: zhaokai
- * Date: 13-12-3
- * Time: 上午9:01
- * Version: 1.0
- * History: <p>如果有修改过程，请记录</P>
+ * 〈一句话功能简述〉<br>
+ * 〈功能详细描述〉
+ *
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
 public final class ResponseUtils {
     public static final Logger log = LoggerFactory

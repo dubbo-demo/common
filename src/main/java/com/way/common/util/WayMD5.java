@@ -1,11 +1,14 @@
 package com.way.common.util;
 
 /**
- * MD5加密
- * 
- * @since version1.0
+ *  MD5加密
+ * 〈功能详细描述〉
+ *
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
-public class MaiyaMD5 {
+public class WayMD5 {
 
     static final int S11 = 7;
 
@@ -57,7 +60,7 @@ public class MaiyaMD5 {
     }
 
     public static String encode(String s) {
-        return new MaiyaMD5().getMD5ofStr(s);
+        return new WayMD5().getMD5ofStr(s);
     }
 
     public static void main(String args[]) {
@@ -77,7 +80,7 @@ public class MaiyaMD5 {
 
     private byte digest[];
 
-    public MaiyaMD5() {
+    public WayMD5() {
         state = new long[4];
         count = new long[2];
         buffer = new byte[64];

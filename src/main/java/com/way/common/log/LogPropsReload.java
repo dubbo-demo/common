@@ -16,7 +16,6 @@ import java.util.Properties;
  * Version: 1.0
  * History: <p>如果有修改过程，请记录</P>
  */
-
 public class LogPropsReload {
 
     private static final Logger LOG = LoggerFactory.getLogger(LogPropsReload.class);

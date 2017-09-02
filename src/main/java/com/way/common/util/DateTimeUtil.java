@@ -9,11 +9,12 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * @ClassName: DateTimeUtil
- * @Description: TODO
- * @author hf
- * @date 2016年10月28日 下午2:00:03
- * 
+ * 〈一句话功能简述〉<br>
+ * 〈功能详细描述〉
+ *
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
 public class DateTimeUtil {
 	private static SimpleDateFormat normalDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
