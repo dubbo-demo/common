@@ -8,13 +8,13 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * INFO: info
- * User: zhaokai
- * Date: 2016/8/17 - 10:05
- * Version: 1.0
- * History: <p>如果有修改过程，请记录</P>
+ * 〈一句话功能简述〉<br>
+ * 〈功能详细描述〉
+ *
+ * @author xinpei.xu
+ * @see [相关类/方法]（可选）
+ * @since [产品/模块版本] （可选）
  */
-
 @Data
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = false)
