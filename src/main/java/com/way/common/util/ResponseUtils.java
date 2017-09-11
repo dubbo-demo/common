@@ -2,9 +2,13 @@ package com.way.common.util;
 
 
 import com.alibaba.fastjson.JSON;
+import com.way.common.result.ServiceResult;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
@@ -69,6 +73,56 @@ public final class ResponseUtils {
             response.getWriter().write(text);
         } catch (IOException e) {
             log.error(e.getMessage(), e);
+        }
+    }
+
+    /**
+     * @Title: toJsonOrJsonP
+     * @Description: 将返回值转换为json或者jsonP输出输出
+     * @return: void
+     * @param request
+     * @param response
+     * @param retcode
+     * @param retinfo
+     */
+    public static void toJsonOrJsonP(HttpServletRequest request, HttpServletResponse response, int retcode, String retinfo) {
+        ServiceResult<String> serviceResult = ServiceResult.newFailure(retcode, retinfo);
+        String callback = request.getParameter("callback");
+        String fullContentType = null;
+        try {
+            if(StringUtils.isNotBlank(callback)) {
+                // 返回JsonP格式
+                fullContentType = "application/javascript;charset=UTF-8";
+                response.setContentType(fullContentType);
+                response.getWriter().write(callback + "(" + JSON.toJSONString(serviceResult) + ")");
+            } else {
+                // 返回Json格式
+                fullContentType = "application/json;charset=UTF-8";
+                response.setContentType(fullContentType);
+                response.getWriter().write(JSON.toJSONString(serviceResult));
+            }
+            response.getWriter().flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * @Title: toJsonOrJsonP
+     * @Description: 将返回值转换为json或者jsonp输出
+     * @return: void
+     */
+    public static void toJsonP(HttpServletRequest request, ServletResponse response, ServiceResult serviceResult) {
+        String callback = request.getParameter("callback");
+        try {
+            if(StringUtils.isNotBlank(callback)) {
+                // 返回JsonP格式
+                response.setContentType("application/javascript;charset=UTF-8");
+                response.getWriter().write(callback + "(" + JSON.toJSONString(serviceResult) + ")");
+            }
+            response.getWriter().flush();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
