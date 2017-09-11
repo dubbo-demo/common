@@ -77,6 +77,28 @@ public final class ResponseUtils {
     }
 
     /**
+     * @Title: toJson
+     * @Description: 将返回值转换为json或者jsonP输出输出
+     * @return: void
+     * @param response
+     * @param retcode
+     * @param retinfo
+     */
+    public static void toJson(HttpServletResponse response, int retcode, String retinfo) {
+        ServiceResult<String> serviceResult = ServiceResult.newFailure(retcode, retinfo);
+        String fullContentType = null;
+        try {
+            // 返回Json格式
+            fullContentType = "application/json;charset=UTF-8";
+            response.setContentType(fullContentType);
+            response.getWriter().write(JSON.toJSONString(serviceResult));
+            response.getWriter().flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
      * @Title: toJsonOrJsonP
      * @Description: 将返回值转换为json或者jsonP输出输出
      * @return: void
