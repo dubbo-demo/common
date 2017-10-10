@@ -1,6 +1,42 @@
 package com.way.common.constant;
 
 public class Constants {
+
+    /**
+     * 成功
+     */
+    public static final int SUCCESS = 0;
+
+    /**
+     * 失败
+     */
+    public static final int INVALID = 1;
+
+    /**
+     * Token失效--重新登录账号已经在其他设备登录
+     */
+    public static final int  OKEN_EXPIRED_OTHERLOGIN = 2;
+
+    /**
+     * token失效--登录超时
+     */
+    public static final int TOKEN_EXPIRED_OVERTIME = 3;
+
+    /**
+     * 版本升级--不需要强制升级
+     */
+    public static final int VERSION_UPGRADE = 4;
+
+    /**
+     * 版本升级--需要强制升级
+     */
+    public static final int VERSION_MANDATORY_UPGRADE = 5;
+
+    /**
+     * 会员到期
+     */
+    public static final int MEMBERSHIP_EXPIRES = 6;
+
     /**
      * 是/否
      */
@@ -126,38 +162,4 @@ public class Constants {
 	 */
 	public static final String MOBILE_SERVER="mobile-server";
 
-    /**
-     * 资料步骤默认值
-     */
-    public static final String DATA_COMPLET_VALUES = "0000000000";
-    /**
-     * 资料步骤第一步默认值
-     */
-    public static final String DATA_COMPLET_VALUES_FIRST = "1000000000";
-    /**
-     * 资料步骤第二步默认值
-     */
-    public static final String DATA_COMPLET_VALUES_SECOND  = "1100000000";
-    /**
-     * 资料步骤第三步默认值
-     */
-    public static final String DATA_COMPLET_VALUES_THIRD = "1110000000";
-
-    /**
-     * 资料明细完成步骤默认值
-     */
-    public static final String DATA_DETAIL_COMPLET_VALUES = "000000000000000000000000000000000000000000000000000000000000";
-
-    /**
-     * 资料明细初始化第一步默认值
-     */
-    public static final String DATA_DETAIL_COMPLET_VALUES_FIRST = "000111110000000000000000000000000000000000000000000000000000";
-    /**
-     * 资料明细初始化第二步默认值
-     */
-    public static final String DATA_DETAIL_COMPLET_VALUES_SECOND = "000111111100000000000000000000000000000000000000000000000000";
-    /**
-     * 资料明细初始化第三步默认值
-     */
-    public static final String DATA_DETAIL_COMPLET_VALUES_THIRD = "000111111100100000000000000000000000000000000000000000000000";
 }
