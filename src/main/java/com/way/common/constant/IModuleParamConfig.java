@@ -29,6 +29,9 @@ public class IModuleParamConfig {
 
 	
     /********* mobile-server begin **********/
+    // 上传文件大小
+	public final static String WAY_MOBILE_MAX_FILE_SIZE = "A0001";
+
 
     /********* mobile-server end **********/
 
