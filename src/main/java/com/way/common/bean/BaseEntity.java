@@ -20,6 +20,11 @@ public class BaseEntity implements Serializable {
      */
     private Date createTime;
 
+    /**
+     * 修改时间
+     */
+    private Date modifyTime;
+
     public Long getId() {
         return id;
     }
@@ -42,4 +47,11 @@ public class BaseEntity implements Serializable {
         this.createTime = createTime;
     }
 
+    public Date getModifyTime() {
+        return modifyTime;
+    }
+
+    public void setModifyTime(Date modifyTime) {
+        this.modifyTime = modifyTime;
+    }
 }
