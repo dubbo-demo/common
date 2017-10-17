@@ -56,11 +56,11 @@ public class Constants {
     /**
      * 是/否
      */
-    public static final String NO = "0";
+    public static final String NO = "2";
     /**
      * 是/否
      */
-    public static final int NO_INT = 0;
+    public static final int NO_INT = 2;
     /**
      * 短信验证码有效时间
      */
