@@ -112,25 +112,6 @@ public class Constants {
     // 定义一些地方定义为永久的时间
     public static final String neverDate = "9999-12-31 23:59:59";
 
-    public static final int NOT_MANAGE = 0;// 非管理岗
-
-    public static final int IS_MANAGE = 1;// 管理岗
-    
-    /**
-	 * 手机服务密码密钥
-	 */
-	public static final Integer PRIVATEENCRYPT_MOBILE = 10;
-	
-	/**
-	 * 淘宝密码密钥
-	 */
-	public static final Integer PRIVATEENCRYPT_TAOBAO = 20;
-	
-	/**
-	 * 京东密码密钥
-	 */
-	public static final Integer PRIVATEENCRYPT_JINGDONG = 30;
-	
 	/**
 	 * 排序:升序
 	 */
@@ -142,17 +123,6 @@ public class Constants {
 	public static final String ORDER_DESC="desc";
 	
 	/**
-	 * 代办
-	 */
-	public static final String TASK_TODO="todo";
-
-	/**
-	 * 已办
-	 */
-	public static final String TASK_DONE="done";
-
-
-	/**
 	 * 借款单号头
 	 */
 	public static final String APPLY_NO_HEADER="APP_";
@@ -161,5 +131,20 @@ public class Constants {
 	 * 请求来源
 	 */
 	public static final String MOBILE_SERVER="mobile-server";
+
+    /**
+     * 默认授权开始时间
+     */
+    public static final String ACCREDIT_STARTTIME="09:00";
+
+    /**
+     * 默认授权结束时间
+     */
+    public static final String ACCREDIT_ENDTIME="17;00";
+
+    /**
+     * 默认授权日期
+     */
+    public static final String WEEKS="1,2,3,4,5";
 
 }
