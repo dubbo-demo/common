@@ -140,7 +140,7 @@ public class Constants {
     /**
      * 默认授权结束时间
      */
-    public static final String ACCREDIT_ENDTIME="17;00";
+    public static final String ACCREDIT_ENDTIME="17:00";
 
     /**
      * 默认授权日期
