@@ -85,17 +85,17 @@ public class RedisConstants {
     /**
      * 银行管理 Redis Key
      */
-    public static final String CONF_BANK_KEY = "zd:bank:conf:";
+    public static final String CONF_BANK_KEY = "zd:withdrawal:conf:";
 
     /**
      * 渠道银行管理 Redis Key
      */
-    public static final String CHA_BANK_KEY = "zd:bank:coop:";
+    public static final String CHA_BANK_KEY = "zd:withdrawal:coop:";
 
     /**
      * 银行支付渠道路由 Redis Key
      */
-    public static final String BANK_CHANNEL_ROUTE_KEY = "zd:bank:rount:";
+    public static final String BANK_CHANNEL_ROUTE_KEY = "zd:withdrawal:rount:";
     
     /**
      * 资金方支付渠道路由 Redis Key
