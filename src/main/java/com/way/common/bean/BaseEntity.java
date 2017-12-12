@@ -18,12 +18,12 @@ public class BaseEntity implements Serializable {
     /**
      * 创建时间
      */
-    private Date createTime;
+    private Date createTime = new Date();
 
     /**
      * 修改时间
      */
-    private Date modifyTime;
+    private Date modifyTime = new Date();
 
     public Long getId() {
         return id;
