@@ -147,5 +147,22 @@ public final class ResponseUtils {
             e.printStackTrace();
         }
     }
+
+    /**
+     * beeCloudResponse
+     * @param response
+     * @param message
+     */
+    public static void beeCloudResponse(HttpServletResponse response, String message) {
+        try {
+            // 返回JsonP格式
+            response.setContentType("application/json");
+            response.getWriter().write(JSON.toJSONString(message));
+            response.getWriter().flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
 
