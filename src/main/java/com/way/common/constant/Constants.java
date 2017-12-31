@@ -33,7 +33,7 @@ public class Constants {
     public static final int VERSION_MANDATORY_UPGRADE = 5;
 
     /**
-     * 会员到期
+     * 您还不是会员，请先购买会员
      */
     public static final int MEMBERSHIP_EXPIRES = 6;
 
